@@ -13,13 +13,13 @@ app.config(function ($locationProvider, $stateProvider, $urlRouterProvider) {
 			templateUrl: 'templates/home.html',
 			controller: 'homeController',
 		})
-		.state('home.newsFeed', {
+		.state('home.accomplishments', {
 			//			url: 'newsFeed',
-			templateUrl: 'templates/newsFeed.html',
+			templateUrl: 'templates/accomplishments.html',
 			controller: 'homeController',
 		})
-		.state('home.friends', {
-			templateUrl: 'templates/friendsList.html',
+		.state('home.workHistory', {
+			templateUrl: 'templates/workHistory.html',
 			controller: 'homeController',
 		})
 		//		 ABOUT PAGE AND VIEWS
