@@ -27,5 +27,5 @@ app.config(function ($locationProvider, $stateProvider, $urlRouterProvider) {
 			url: '/about',
 			templateUrl: 'templates/about.html',
 			controller: 'aboutController',
-		})
+		});
 });
