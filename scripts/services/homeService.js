@@ -1,55 +1,39 @@
 app.service('homeService', function () {
 	'use strict';
 
-	this.getMessages = [
+	this.getAchievements = [
 		{
-			author: 'Brendan',
-			message: "haha I'm good at this",
+			date: 'May, 2010',
+			accomplishment: "Eagle Scout",
 		},
 		{
-			author: "WrathBourne",
-			message: "whatcha talkin 'bout?",
+			date: "October, 2015",
+			accomplishment: "DevMountain Graduate",
 		},
 		{
-			author: 'Brendan',
-			message: "I'm a coder!!!",
+			date: 'April, 2015',
+			accomplishment: "Co-Author of Sam's Teach Yourself AngularJS, JavaScript, and jQuery",
 		},
 		{
-			author: 'dad',
-			message: 'come back in 20 years',
+			date: '2010-2011',
+			accomplishment: "Co-Founder of Spanish Fork HighSchool's robotics club",
 		},
 	];
 
 
 
-	this.getFriends = [
+	this.workHistory = [
 		{
-			name: 'Bob Marley',
-			birthday: '12/3/1957',
-			dateAdded: '04/9/2011',
-			gender: 'male',
-			interests: ['guitar', 'weed', 'Composing']
+			company: 'Big 5 Sporting Goods',
+			years: 'march, 2013 - February, 2015',
+			title: 'Sales Representative, Cashier',
+			responsibilities: ['Customer Service', 'Being professional', 'Keeping the store organized', 'Cashier', 'Restock', 'kept the bathrooms and lunch area clean']
 	},
 		{
-			name: 'Dork McDorkin',
-			birthday: 'unkown',
-			dateAdded: 'also unkown',
-			gender: 'been on both sides',
-			interests: ['YOU'],
-	},
-		{
-			name: 'Shawn White',
-			birthday: 'old',
-			dateAdded: 'monday',
-			gender: 'male',
-			interests: ['slowing down the olympics cause of premodonna bulls***', 'snowboarding'],
-	},
-		{
-			name: 'Brad Dayley',
-			birthday: '10/11/1972',
-			dateAdded: '7/17/1994',
-			gender: 'male',
-			interests: ['technology', 'writing books', 'Karate', 'Indian Foods', 'programming', 'learning', 'nature', 'jeeping', 'D', ]
+			company: 'Blue Mountain Scout Camp',
+			years: 'One week in june for the years 2008 - 2012',
+			title: 'Volunteer Climbing and Rappelling staff member',
+			responsibilities: ['Keep scouts safe', 'Understand and apply proper safety procedurs', 'Know the knotts and equipment needed', ]
 		},
 	];
 

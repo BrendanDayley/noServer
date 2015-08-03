@@ -29,3 +29,9 @@ leftNavBar {
 div {
 	padding: 20px 75px;
 }
+.atom {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100px;
+}

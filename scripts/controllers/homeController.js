@@ -1,8 +1,8 @@
 app.controller('homeController', function ($scope, homeService) {
 	'use strict';
 
-	$scope.messages = homeService.getMessages;
-	$scope.friends = homeService.getFriends;
+	$scope.achievements = homeService.getAchievements;
+	$scope.workHistory = homeService.workHistory;
 	console.log(homeService.getFriends);
 
 });
