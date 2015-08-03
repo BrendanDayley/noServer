@@ -1,2 +1,26 @@
 <h2>Things I've learned</h2>
-<span ng-repeat='thing in things' class='btn btn-primary'>{{ thing }}</span>
+<!--<span ng-repeat='thing in things' class='btn btn-primary'>{{ thing }}</span>-->
+
+
+<div class="windowContainer">
+	<tab class='buttons' ng-repeat='thing in things' ng-class='{activeTab:thing.selected}' ng-click='select(thing)'>{{thing.name}}</tab>
+
+	<div window class='window'>
+
+	</div>
+</div>
+
+
+<!--
+<tab>
+	<window title="Canyon">
+		<p>canyon goes here</p>
+	</window>
+	<window title='Lake'>
+		<p>lake goes here</p>
+	</window>
+	<window title='River'>
+		<p>river goes here</p>
+	</window>
+</tab>
+-->

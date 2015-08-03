@@ -3,6 +3,5 @@ app.controller('homeController', function ($scope, homeService) {
 
 	$scope.achievements = homeService.getAchievements;
 	$scope.workHistory = homeService.workHistory;
-	console.log(homeService.getFriends);
 
 });

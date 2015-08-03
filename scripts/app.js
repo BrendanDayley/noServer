@@ -1,4 +1,4 @@
-var app = angular.module('noServer', ['ui.router']);
+var app = angular.module('noServer', ['ui.router', 'ngMaterial']);
 
 app.config(function ($locationProvider, $stateProvider, $urlRouterProvider) {
 	'use strict';

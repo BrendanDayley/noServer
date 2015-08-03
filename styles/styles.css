@@ -35,3 +35,41 @@ div {
 	right: 0;
 	height: 100px;
 }
+.buttons {
+	display: inline-block;
+	width: 100px;
+	border-radius: .5em .5em 0 0;
+	border: 1px solid black;
+	text-align: center;
+	font: 15px/28px Helvetica, sans-serif;
+	background-image: linear-gradient (#cccccc, #eeeeee);
+	cursor: pointer;
+}
+.activeTab {
+	border-bottom: none;
+	background-image: linear-gradient(#66ccff, #ccffff);
+}
+.tabs {
+	width: auto;
+}
+.window {
+	border: 1px solid black;
+	background-color: white;
+	height: 300px;
+	width: inherit;
+	padding: 10px;
+	margin-top: -2px;
+	overflow: auto;
+}
+.underline {
+	border-bottom: 1px ridge deeppink;
+	margin-top: 50px;
+}
+.spacedList {
+	margin-top: 10px;
+	font-size: 14px;
+}
+.buttonHover {
+	background-color: aqua;
+	font-family: cursive;
+}
