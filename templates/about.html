@@ -1,6 +1,7 @@
 <h2>Things I've learned</h2>
 <!--<span ng-repeat='thing in things' class='btn btn-primary'>{{ thing }}</span>-->
 
+<!--
 
 <div class="windowContainer">
 	<tab class='buttons' ng-repeat='thing in things' ng-class='{activeTab:thing.selected}' ng-click='select(thing)'>{{thing.name}}</tab>
@@ -10,17 +11,27 @@
 	</div>
 </div>
 
-
-<!--
-<tab>
-	<window title="Canyon">
-		<p>canyon goes here</p>
-	</window>
-	<window title='Lake'>
-		<p>lake goes here</p>
-	</window>
-	<window title='River'>
-		<p>river goes here</p>
-	</window>
-</tab>
 -->
+
+<tab>
+	<pane title="Html">
+		<ng-include src="'./templates/aboutTemplates/html.html'">hello</ng-include>
+	</pane>
+
+	<pane title='Css'>
+		<ng-include src="'./templates/aboutTemplates/css.html'"></ng-include>
+	</pane>
+
+	<pane title='JavaScript'>
+
+	</pane>
+
+	<pane title='jQuery'>
+		<p>river goes here</p>
+	</pane>
+
+	<pane title='AngularJS'>
+		<ng-include src="'./templates/aboutTemplates/aJS.html'"></ng-include>
+	</pane>
+
+</tab>

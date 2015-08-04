@@ -1,0 +1,11 @@
+<div class='wholePane' ng-controller='aJSController'>
+	<div class='aJSContainer' ng-repeat='direc in ngDirecs'>
+		<div class='nothin'>
+			<span bubble class='aJSItems' ng-click='showDetails = ! showDetails'>{{direc.direc}}</span>
+			<br>
+			<br>
+			<span ng-show='showDetails'>{{direc.description}}</span>
+		</div>
+	</div>
+	<p>{{cool}}</p>
+</div>

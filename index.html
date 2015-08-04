@@ -4,29 +4,23 @@
 <head>
 	<title>noServer Project</title>
 	<link type="text/css" rel="stylesheet" href="styles/styles.css" />
+	<link type='text/css' rel="stylesheet" href='styles/cssStyler.css' />
+	<link rel="stylesheet" href="styles/htmlStyles.css" />
+	<link rel="stylesheet" href="styles/aJS.css" />
 </head>
 
 
 <body>
 	<header class='topDown'>
-		<h1>Welcome</h1>
-
-
-
-
-
-
-
+		<h1 class='center'>Welcome</h1>
 	</header>
 
 	<leftNavBar>
-		<ul>
-			<li><a ui-sref='home'>Home</a></li>
-			<li><a ui-sref='about'>About</a></li>
-			<li>friends</li>
-			<li>subscriptions</li>
-			<li></li>
-			<li></li>
+		<br>
+		<br>
+		<ul class='menulist'>
+			<li class='menu'><a class='nav' ui-sref='home'>Home</a></li>
+			<li class='menu'><a class='nav' ui-sref='about'>About</a></li>
 		</ul>
 	</leftNavBar>
 
@@ -46,7 +40,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 	<script src='https://code.angularjs.org/1.4.3/angular-route.js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<!--	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
 
 	<!--ANGULAR MATERIAL-->
 	<script src='https://code.angularjs.org/1.4.3/angular-animate.js'></script>
@@ -59,14 +53,17 @@
 	<!-- CONTROLLERS -->
 	<script src="scripts/controllers/homeController.js"></script>
 	<script src="scripts/controllers/aboutController.js"></script>
+	<script src="scripts/controllers/aJSController.js"></script>
 
 	<!-- SERVICES -->
 	<script src="scripts/services/homeService.js"></script>
 	<script src="scripts/services/aboutService.js"></script>
+	<script src="scripts/services/aJSService.js"></script>
 
 	<!--DIRECTIVES-->
 	<script src='scripts/directives/aboutDirective.js'></script>
 	<script src="scripts/directives/tabs.js"></script>
+	<script src="scripts/directives/grid.js"></script>
 
 </body>
 

@@ -1,0 +1,69 @@
+		.css {
+			height: 100%;
+			width: inherit;
+			background-color: black;
+			margin: -20px;
+		}
+		@keyframes ball {
+			0% {
+				background-color: dodgerblue;
+				left: 0px;
+				top: 0px;
+			}
+			10% {
+				background-color: crimson;
+				left: 150px;
+				top: 300px;
+			}
+			20% {
+				background-color: chartreuse;
+				color: white;
+				font: 20px cursive;
+				left: 300px;
+				top: 25px;
+			}
+			30% {
+				border-radius: 0;
+				background-color: forestgreen;
+				color: aqua;
+				left: 500px;
+				top: 250px;
+				border-top-right-radius: 50%;
+				border-bottom-left-radius: 50%;
+			}
+			40% {
+				top: 0px;
+				left: 0px;
+				color: deeppink;
+				background-color: deepskyblue;
+			}
+			50% {
+				border-top-left-radius: 50%;
+				border-bottom-right-radius: 50%;
+				left: 850px;
+				top: 0px;
+			}
+			80% {
+				top: 25px;
+				left: 20px;
+				border-radius: 0;
+				background-color: transparent;
+			}
+			81% {
+				background-color: transparent;
+				color: transparent;
+			}
+			100% {
+				background-color: dodgerblue;
+			}
+		}
+		ball {
+			background-color: dodgerblue;
+			border-radius: 10%;
+			padding: 35px;
+			animation-name: ball;
+			animation-duration: 7s;
+			position: relative;
+			top: 45px;
+			left: 20px;
+		}

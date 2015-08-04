@@ -1,10 +1,16 @@
 <div class='homeHtml'>
 	<h1>Home Page</h1>
-	<p>This page uses a <span class='highlight'>nested</span> view.</p>
+	<p class='center'>This page uses a <span class='highlight'>nested</span> view.</p>
 
-	<a ui-sref='.accomplishments'><md-button md-no-ink class='md-raised'>Accomplishments</md-button></a>
-	<a ui-sref='.workHistory'><md-button md-no-ink class='md-primary'>Work history</md-button></a>
-  
+	<myLink ui-sref='.accomplishments'>
+		<button button-changer class='homebutton'> Accomplishments </button>
+	</myLink>
+
+	<myLink ui-sref='.workHistory'>
+		<button button-changer class='homebutton'>
+			Work history</button>
+	</myLink>
+
 </div>
 
 <div ui-view></div>

@@ -1,31 +1,18 @@
-app.directive('window', function () {
+'use strict';
+
+
+app.directive('pane', function () {
+
 	return {
-		templateUrl: './templates/aboutTemplates/html.html',
-		controller: function ($scope) {},
-		link: function (scope, element, attrs) {
-			//			element.bind('mouseenter', function () {
-			//				console.log('working');
-			//			});
-			//			element.bind('mouseleave', function () {
-			//				console.log('leaving');
-			//			});
-		}
+		require: '^tab',
+		restrict: 'E',
+		templateUrl: 'templates/aboutTemplates/window.html',
+		transclude: true,
+		scope: {
+			title: '@'
+		},
+		link: function (scope, element, attrs, tabsCtrl) {
+			tabsCtrl.addWindow(scope);
+		},
 	};
 });
-
-
-//app.directive('window', function () {
-//	debugger;
-//	return {
-//		require: '^tab',
-//		restrict: 'AEC',
-//		templateUrl: 'templates/aboutTemplates/pane.html',
-//		transclude: true,
-//		scope: {
-//			title: '@'
-//		},
-//		link: function (scope, element, attrs, tabsCtrl) {
-//			tabsCtrl.addWindow(scope);
-//		},
-//	};
-//});
