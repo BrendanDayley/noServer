@@ -19,7 +19,9 @@ app.directive('tab', function () {
 	return {
 		restrict: 'E',
 		transclude: true,
-		scope: {},
+		scope: {
+			elem: "="
+		},
 		templateUrl: './templates/aboutTemplates/tabs.html',
 		controller: function ($scope) {
 			var windows = $scope.windows = [];
@@ -28,6 +30,9 @@ app.directive('tab', function () {
 					window.selected = false;
 				});
 				window.selected = true;
+				if (window.selected === true) {
+					$('#photos').trigger('panechanged');
+				};
 			};
 			this.addWindow = function (window) {
 				if (windows.length === 0) {

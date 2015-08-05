@@ -8,11 +8,11 @@
 	margin: -10px;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-between;
+	/*	justify-content: space-around;*/
 }
 .aJSContainer {
 	display: flex;
-	flex: 15%;
+	flex: 30%;
 }
 .aJSItems {
 	width: auto;
@@ -22,8 +22,24 @@
 	font-weight: bold;
 	font: cursive;
 	clear: both;
+	cursor: pointer;
 }
 .nothin {
 	padding: 0;
 	margin: 10;
+}
+.details {
+	width: 200px;
+	height: auto;
+	flex-wrap: wrap
+}
+@keyframes clicked {
+	from {
+		background-color: #8A0651;
+		color: #ffffff
+	}
+	to {
+		background-color: deeppink;
+		color: deepskyblue;
+	}
 }
