@@ -1,4 +1,4 @@
-$('#photos').bind('panechanged', function () {
+$('div#photos').bind('panechanged', function () {
 	$("img").mouseover(function () {
 		$(this).animate({
 			width: "175px",

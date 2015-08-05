@@ -30,7 +30,7 @@ app.directive('tab', function () {
 					window.selected = false;
 				});
 				window.selected = true;
-				$('#photos').trigger('panechanged');
+				$('div#photos').trigger('panechanged');
 			};
 			this.addWindow = function (window) {
 				if (windows.length === 0) {
