@@ -3,37 +3,42 @@ body {
 	height: 100%;
 	width: 100%;
 }
-.topDown {
+header {
 	height: 15%;
 	width: 100%;
-	font-size: 30px;
+	font-size: 70px;
+	background-color: white;
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	margin-bottom: 15px;
 }
-.content {
-	height: 100%;
-}
-leftNavBar {
-	width: 10%;
-	min-height: inherit;
-	height: 100%;
-	float: left;
-	color: chartreuse;
-	background-color: dimgrey;
+.right {
+	text-align: center;
+	margin: -50px 20px;
+	float: right;
 }
 .nav {
-	color: chartreuse;
+	padding: 5px 10px;
 }
-.menu {
-	margin: 10px auto;
-	font: 18px cursive;
+.centerContent {
+	width: 30%;
+	margin: auto;
+}
+.centerText {
+	text-align: center;
+}
+.content {
+	margin: auto;
+	width: 90%;
+	height: 100%;
+	color: black;
+	position: relative;
+	background-color: lightgray;
 }
 .container {
-	float: right;
-	width: 90%;
-	margin: auto;
-	min-height: 100%;
-	height: auto;
-	background-color: lightgray;
-	color: deeppink;
+	margin-top: 10%;
+	width: 100%;
 }
 div {
 	padding: 20px 75px;
@@ -54,54 +59,29 @@ div {
 	border-bottom: none;
 	background-image: linear-gradient(#66ccff, #ccffff);
 }
-.tabs {
-	width: auto;
-}
 .pane {
 	margin-top: 0px;
 	border: 1px solid black;
 	background-color: white;
 	height: 500px;
 	width: inherit;
-	padding: 10px;
+	padding: 0;
 	margin-top: -2px;
 	overflow: auto;
-}
-.underline {
-	border-bottom: 1px ridge deeppink;
-	margin-top: 50px;
-}
-.spacedList {
-	margin-top: 10px;
-	font-size: 14px;
 }
 .buttonHover {
 	background-color: aqua;
 	font-family: cursive;
 	font-size: 18px;
 }
-.tab {
-	padding: 0;
-}
 h1,
 h2,
+h3,
+h4,
+h5,
+h6,
 center {
 	text-align: center;
-}
-.highlight {
-	background-color: darkgray;
-	font-weight: bold;
-	border-radius: .3em;
-	padding: 2px;
-}
-.homebutton {
-	background-color: steelblue;
-	padding: 5px 10px;
-	border-radius: .5em;
-	cursor: pointer;
-}
-center {
-	margin: 0 auto;
 }
 #elusiveText {
 	background-color: #0066AA;
@@ -115,6 +95,10 @@ center {
 	top: 150px;
 	left: 100px;
 }
-tab.jQueryPane {
-	height: 700px !important;
+.listTitle {
+	padding: 5px;
+	border-bottom: 2px solid white;
+}
+.noPadding {
+	padding: 0;
 }

@@ -1,14 +1,14 @@
 		.css {
 			height: 100%;
-			width: inherit;
+			width: 100%;
 			background-color: black;
-			margin: -20px;
+			margin: 0px;
 		}
 		@keyframes ball {
 			0% {
 				background-color: dodgerblue;
-				left: 0px;
-				top: 0px;
+				left: 20px;
+				top: 40px;
 			}
 			10% {
 				background-color: crimson;
@@ -20,7 +20,7 @@
 				color: white;
 				font: 20px cursive;
 				left: 300px;
-				top: 25px;
+				top: 45px;
 			}
 			30% {
 				border-radius: 0;
@@ -32,8 +32,8 @@
 				border-bottom-left-radius: 50%;
 			}
 			40% {
-				top: 0px;
-				left: 0px;
+				top: 40px;
+				left: 20px;
 				color: deeppink;
 				background-color: deepskyblue;
 			}
@@ -41,10 +41,10 @@
 				border-top-left-radius: 50%;
 				border-bottom-right-radius: 50%;
 				left: 850px;
-				top: 0px;
+				top: 40px;
 			}
 			80% {
-				top: 25px;
+				top: 45px;
 				left: 20px;
 				border-radius: 0;
 				background-color: transparent;

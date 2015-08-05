@@ -1,4 +1,4 @@
-var app = angular.module('noServer', ['ui.router', 'ngMaterial']);
+var app = angular.module('noServer', ['ui.router']);
 
 app.config(function ($locationProvider, $stateProvider, $urlRouterProvider) {
 	'use strict';
@@ -27,5 +27,10 @@ app.config(function ($locationProvider, $stateProvider, $urlRouterProvider) {
 			url: '/about',
 			templateUrl: 'templates/about.html',
 			controller: 'aboutController',
-		});
+		})
+		.state('mission', {
+			url: '/mission',
+			templateUrl: 'templates/mission.html',
+			controller: 'missionController',
+		})
 });

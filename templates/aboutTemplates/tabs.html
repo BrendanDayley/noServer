@@ -1,7 +1,7 @@
 <div class='tabbable'>
-	<div class='tab'>
+	<div>
 		<span class='buttons' ng-repeat='window in windows' ng-class='{activeTab:window.selected}' ng-click='select(window)' button-changer>{{window.title}}
 		</span>
 	</div>
-	<div class='tab' ng-transclude></div>
+	<div ng-transclude></div>
 </div>

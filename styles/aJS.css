@@ -1,45 +1,51 @@
 .wholePane {
-	background-color: #424242;
-	border: 25px solid black;
-	padding: 25px;
-	min-height: 100%;
-	height: auto;
-	width: auto;
-	margin: -10px;
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	/*
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column;
+*/
 	/*	justify-content: space-around;*/
 }
 .aJSContainer {
 	display: flex;
-	flex: 30%;
+	width: 100%;
 }
 .aJSItems {
 	width: auto;
 	padding: 5px 10px;
-	background-color: #8A0651;
-	color: #ffffff;
 	font-weight: bold;
-	font: cursive;
-	clear: both;
 	cursor: pointer;
+	margin: 15px;
 }
-.nothin {
-	padding: 0;
-	margin: 10;
+.angular {
+	display: inline-block;
+	float: left;
+	height: 100%;
 }
-.details {
-	width: 200px;
-	height: auto;
-	flex-wrap: wrap
+.angularLeft {
+	width: 30%;
+	position: relative;
 }
-@keyframes clicked {
-	from {
-		background-color: #8A0651;
-		color: #ffffff
-	}
-	to {
-		background-color: deeppink;
-		color: deepskyblue;
-	}
+.smaller {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.angularCode,
+.angularRight {
+	width: 35%;
+}
+.angularCode {
+	background-color: aqua;
+}
+.angularRight {
+	background-color: green;
+}
+.direcImg {
+	width: 100% !important;
+	opacity: 1 !important;
 }

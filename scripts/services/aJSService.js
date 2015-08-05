@@ -2,11 +2,12 @@ app.service('aJSService', function () {
 	this.ngDirectives = [
 		{
 			direc: 'ngRepeat',
-			description: 'is used to repeat over items in an array and populate the DOM with that data',
+			description: 'ng repeat is used to repeat over items in an array and populate the DOM with that data',
+			img: './images/Brendan%20and%20Jessie0634.jpg'
 		},
 		{
 			direc: 'ngInclude',
-			description: 'is used to include an external file into another, for example all this text has been called using an ng-include in the parent html file',
+			description: 'ng include is used to include an external file into another, for example all this text has been called using an ng-include in the parent html file',
 		},
 		{
 			direc: 'ngApp',
@@ -18,11 +19,11 @@ app.service('aJSService', function () {
 		},
 		{
 			direc: 'Event Directives',
-			description: 'event directies such as, ng-keydown/keyup, and ng-mouseenter/mouseleave are extremely useful when you need to make or detect a change within your view, an example of the use of these event directives are the tabs up above, when the mouse cursor enters they change, and when the mouse cursor leaves then they change back.',
+			description: 'Event directies such as, ng-keydown/keyup, and ng-mouseenter/mouseleave are extremely useful when you need to make or detect a change within your view, an example of the use of these event directives are the tabs up above, when the mouse cursor enters they change, and when the mouse cursor leaves then they change back.',
 		},
 		{
 			direc: 'Custom Directives',
-			description: 'the biggest reason to use AngularJS is the custom directives, at the same time they can be the most complex and difficult to understand. Custom directives give a developer the ability to build their own library based on their frequent needs. S,everal custom directives went into the making of this site',
+			description: 'the biggest reason to use AngularJS is the custom directives, at the same time they can be the most complex and difficult to understand. Custom directives give a developer the ability to build their own library based on their frequent needs. Several custom directives went into the making of this site',
 }
 		]
 });

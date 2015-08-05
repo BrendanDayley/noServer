@@ -1,12 +1,31 @@
 <div class='wholePane' ng-controller='aJSController'>
 
+	<!--
 	<div class='aJSContainer' ng-repeat='direc in ngDirecs'>
-		<div class='nothin'>
-			<span grid class='aJSItems' ng-click='showDetails = ! showDetails'>{{direc.direc}}</span>
+			<span  class='aJSItems' ng-click='showDetails = ! showDetails'>{{direc.direc}}</span>
 			<br>
 			<br>
 			<div class='details' ng-show='showDetails'>{{direc.description}}</div>
+	</div>
+-->
+	<div class='angular angularLeft'>
+		<select ng-model='myDirec' ng-options='direc.direc for direc in ngDirecs'>
+			<option value=''>Choose Directive</option>
+		</select>
+		<!--
+</div>
+<div class='angular angularMid centerText'>
+-->
+		<div class='smaller'>
+			<p></p>
+			<hr> {{myDirec.description}}
+			<hr>
+			<p></p>
 		</div>
 	</div>
+	<div class='angular angularCode centerText'>
+		<img class='direcImg' src="{{myDirec.img}}" />
+	</div>
+	<div class='angular angularRight centerText'>blue</div>
 
 </div>

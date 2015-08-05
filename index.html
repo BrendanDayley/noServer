@@ -3,6 +3,9 @@
 
 <head>
 	<title>noServer Project</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
 	<link type="text/css" rel="stylesheet" href="styles/styles.css" />
 	<link type='text/css' rel="stylesheet" href='styles/cssStyler.css' />
 	<link rel="stylesheet" href="styles/aJS.css" />
@@ -11,24 +14,24 @@
 
 
 <body>
-	<header class='topDown'>
-		<h1 class='center'>Welcome</h1>
-	</header>
+
 	<div class='content'>
-		<leftNavBar>
-			<br>
-			<br>
-			<ul class='menulist'>
-				<li class='menu'><a class='nav' ui-sref='home'>Home</a></li>
-				<li class='menu'><a class='nav' ui-sref='about'>About</a></li>
-			</ul>
-		</leftNavBar>
+		<div>
+			<header class='topDown'>
+				<div>
+					<h1 class='center'>Welcome</h1>
+				</div>
+				<div class='right'>
+					<button class='nav btn btn-sm btn-primary' ui-sref='home'>Home</button>
+					<button class='nav btn btn-sm btn-primary' ui-sref='about'>About</button>
+					<button class='nav btn btn-sm btn-primary' ui-sref='mission'>Mission</button>
+				</div>
+			</header>
+		</div>
 
-
-
-
+		<br>
 		<div class='container' ui-view></div>
-
+		<!--		<img src="images/symphony.png" />-->
 	</div>
 
 
@@ -38,8 +41,11 @@
 
 
 
+
 	<!-- EXTERNAL LIBRARIES -->
-	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 	<script src='https://code.angularjs.org/1.4.3/angular-route.js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
@@ -47,9 +53,11 @@
 	<!--	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
 
 	<!--ANGULAR MATERIAL-->
-	<script src='https://code.angularjs.org/1.4.3/angular-animate.js'></script>
-	<script src='https://code.angularjs.org/1.4.3/angular-aria.js'></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.js"></script>
+	<!--
+<script src='https://code.angularjs.org/1.4.3/angular-animate.js'></script>
+<script src='https://code.angularjs.org/1.4.3/angular-aria.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.js"></script>
+-->
 
 	<!--APP-->
 	<script src="scripts/app.js"></script>
@@ -60,6 +68,7 @@
 	<script src="scripts/controllers/homeController.js"></script>
 	<script src="scripts/controllers/aboutController.js"></script>
 	<script src="scripts/controllers/aJSController.js"></script>
+	<script src="scripts/controllers/missionController.js"></script>
 
 	<!-- SERVICES -->
 	<script src="scripts/services/homeService.js"></script>
@@ -69,7 +78,6 @@
 	<!--DIRECTIVES-->
 	<script src='scripts/directives/aboutDirective.js'></script>
 	<script src="scripts/directives/tabs.js"></script>
-	<script src="scripts/directives/grid.js"></script>
 
 </body>
 
