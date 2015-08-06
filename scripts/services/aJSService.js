@@ -3,7 +3,7 @@ app.service('aJSService', function () {
 		{
 			direc: 'ngRepeat',
 			description: 'ng repeat is used to repeat over items in an array and populate the DOM with that data',
-			img: './images/Brendan%20and%20Jessie0634.jpg'
+			img: './images/nightSky.png'
 		},
 		{
 			direc: 'ngInclude',
