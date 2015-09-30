@@ -30,11 +30,11 @@ app.directive('tab', function () {
 					window.selected = false;
 				});
 				window.selected = true;
-				$('#photos').trigger('panechanged');
 			};
 			this.addWindow = function (window) {
 				if (windows.length === 0) {
 					$scope.select(window);
+					$('#photos').trigger('panechanged');
 				};
 				windows.push(window);
 			}

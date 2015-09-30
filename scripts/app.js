@@ -14,7 +14,6 @@ app.config(function ($locationProvider, $stateProvider, $urlRouterProvider) {
 			controller: 'homeController',
 		})
 		.state('home.accomplishments', {
-			//			url: 'newsFeed',
 			templateUrl: 'templates/accomplishments.html',
 			controller: 'homeController',
 		})
